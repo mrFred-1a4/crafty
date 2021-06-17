@@ -85,4 +85,3 @@ Official Crafty Controller Page: https://craftycontrol.com/</Description>
   <Config Name="Web UI Port" Target="8000" Default="1800" Mode="tcp" Description="Port to connect to the Web UI" Type="Port" Display="always" Required="true" Mask="false">1800</Config>
   <Config Name="Minecraft Ports" Target="25500-25600" Default="25500-25600" Mode="tcp" Description="Container Port: 25500-25600 yes, 100 ports for 100 possible Servers" Type="Port" Display="always-hide" Required="true" Mask="false">25500-25600</Config>
 </Container>
-
