@@ -101,6 +101,17 @@ def do_intro():
 
     print(intro)
 
+    print(intro)
+    Freddy = "Brought to Unraid by"
+    """
+    ....__________  __________  ______  ______..
+    .../ ____/ __ \/ ____/ __ \/ __ \ \/ / __ \.
+    ../ /_  / /_/ / __/ / / / / / / /\  / / / /.
+    ./ __/ / _, _/ /___/ /_/ / /_/ / / / /_/ /..
+    /_/   /_/ |_/_____/_____/_____/ /_/\____/...
+    """
+    print(Freddy)
+
 
 def show_help():
     console.help("-h: shows this message")
