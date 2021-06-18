@@ -4,9 +4,6 @@
 # Fork of Crafty Controler
 > created by Freddy0 for publishing on Unraid
 
-# Important: Latest Changes
-The project is now hosted on both GitLab and GitHub. GitLab has been setup to push changes to the GitHub project, signalling that we would like to move away from GitLab in the near future.
-
 ## What is Crafty?
 Crafty is a Minecraft Server Wrapper / Controller / Launcher. The purpose 
 of Crafty is to launch a Minecraft server in the background and present 
@@ -20,19 +17,6 @@ is compatible with Windows (7, 8, 10) and Linux (via Python).
 - [Adminlte](https://adminlte.io/themes/AdminLTE/index2.html) used for web templating
 - [Font Awesome 5](https://fontawesome.com/) used for Buttons 
 
-## How does it work?
-Crafty is launched via the command line, normally via a bat or sh script. 
-Crafty will then automatically start a Tornado web server on the back end, 
-as well as your Minecraft server if auto-start is enabled. You can remotely 
-manage your server via the web interface, either on a PC, or on your phone. 
-Logins are secure and use the most advanced web security models available.
-
-## Supported OS?
-- Linux - specifically Ubuntu 18.04 / 19.04 and others if they run python
-- Windows (7,8,10) via a compiled Executable, no need for python installation
-
-## Installation
-Install documentation is available here on GitLab via the [wiki](https://gitlab.com/crafty-controller/crafty-web/wikis/Install-Guides).
 
 ## Documentation
 Check out our shiny new documentation [right on GitLab](https://gitlab.com/crafty-controller/crafty-web/wikis/home).
