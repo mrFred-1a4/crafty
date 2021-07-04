@@ -1,4 +1,4 @@
-FROM python:3.7-alpine
+FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND="noninteractive"
 
