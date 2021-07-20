@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND="noninteractive"
 
 LABEL maintainer="Phillip Tarrant <https://gitlab.com/Ptarrant1>  Dockerfile created by kevdagoat <https://gitlab.com/kevdagoat> and brought to Unraid by Freddy0 <https://hub.docker.com/u/freddy0>"
 
-RUN apt-get update && apt-get install -y python3 python3-dev python3-pip openjdk-11-jre libmysqlclient-dev openjdk-16-jre 
+RUN apt-get update && apt-get install -y python3 python3-dev python3-pip openjdk-11-jre libmysqlclient-dev openjdk-16-jre opnejdk-8-jre
 
 COPY requirements.txt /crafty_web/requirements.txt
 RUN pip3 install -r /crafty_web/requirements.txt

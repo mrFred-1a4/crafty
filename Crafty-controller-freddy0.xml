@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Crafty-Controller-Freddy0</Name>
-  <Repository>freddy0/crafty-container:3.2.1-11-16</Repository>
+  <Repository>freddy0/crafty-container:3.2.2</Repository>
   <Registry>https://hub.docker.com/r/freddy0/crafty-container</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -15,7 +15,7 @@ This image is as official as it becomes, built from the Official docker template
 Crafty controller is a lightweight minecraft wrapper with great featuers and a awesome gui, acessible from a modern web browser.&#xD;
 The username and password appears on the first launch in the docker logs!&#xD;
 &#xD;
-Important note: for minecraft servers on 1.17 and above please use the tag to freddy0/crafty-container:3.2.1-11-16&#xD;
+Important note: for minecraft servers on 1.17 and above please change the tag to freddy0/crafty-container:3.2.2 Java 8 , 11 and 16 are included, so it should work from now on. to specify the java version refer to my docker hub documentation: https://hub.docker.com/r/freddy0/crafty-container&#xD;
 &#xD;
 Template should work out of the box for everyone. Before adding a server, add a folder with your mineccraft jar file in your minecraft_servers folder. In the web ui please use only /minecraft_servers/yourservername, not the unraid path.&#xD;
 &#xD;
