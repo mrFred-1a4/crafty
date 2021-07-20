@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Crafty-Controller-Freddy0</Name>
-  <Repository>freddy0/crafty-container:3.2.2</Repository>
+  <Name>Crafty Control Freddy0</Name>
+  <Repository>freddy0/crafty-container</Repository>
   <Registry>https://hub.docker.com/r/freddy0/crafty-container</Registry>
   <Network>bridge</Network>
   <MyIP/>
@@ -62,26 +62,26 @@ Official Crafty Controller Page: https://craftycontrol.com/</Description>
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/freddy0-Crafty-Control/crafty_db</HostDir>
+      <HostDir>/mnt/user/appdata/freddy0-Crafty/crafty_db</HostDir>
       <ContainerDir>/crafty_db</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/freddy0-Crafty-Control/minecraft_servers</HostDir>
+      <HostDir>/mnt/user/appdata/freddy0-Crafty/minecraft_servers</HostDir>
       <ContainerDir>/minecraft_servers</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/freddy0-Crafty-Control/crafty_web/backups</HostDir>
+      <HostDir>/mnt/user/appdata/freddy0-Crafty/crafty_web/backups</HostDir>
       <ContainerDir>/crafty_web/backups</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="Database" Target="/crafty_db" Default="/mnt/user/appdata/freddy0-Crafty-Control/crafty_db" Mode="rw" Description="Crafty Database for Wrapper Data" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/freddy0-Crafty-Control/crafty_db</Config>
-  <Config Name="Server-Files" Target="/minecraft_servers" Default="/mnt/user/appdata/freddy0-Crafty-Control/minecraft_servers" Mode="rw" Description="Minecraft server Files&#13;&#10;Do not use this path in the web UI only use /minecraft_servers" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/freddy0-Crafty-Control/minecraft_servers</Config>
-  <Config Name="Backups" Target="/crafty_web/backups" Default="/mnt/user/appdata/freddy0-Crafty-Control/crafty_web/backups" Mode="rw" Description="Backup Folder (all of your backups and Crafty Controller Stuff)" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/freddy0-Crafty-Control/crafty_web/backups</Config>
+  <Config Name="Database" Target="/crafty_db" Default="/mnt/user/appdata/freddy0-Crafty-Control/crafty_db" Mode="rw" Description="Crafty Database for Wrapper Data" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/freddy0-Crafty/crafty_db</Config>
+  <Config Name="Server-Files" Target="/minecraft_servers" Default="/mnt/user/appdata/freddy0-Crafty-Control/minecraft_servers" Mode="rw" Description="Minecraft server Files&#13;&#10;Do not use this path in the web UI only use /minecraft_servers" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/freddy0-Crafty/minecraft_servers</Config>
+  <Config Name="Backups" Target="/crafty_web/backups" Default="/mnt/user/appdata/freddy0-Crafty-Control/crafty_web/backups" Mode="rw" Description="Backup Folder (all of your backups and Crafty Controller Stuff)" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/freddy0-Crafty/crafty_web/backups</Config>
   <Config Name="Web UI Port" Target="8000" Default="1800" Mode="tcp" Description="Port to connect to the Web UI" Type="Port" Display="always" Required="true" Mask="false">1800</Config>
   <Config Name="Minecraft Ports" Target="25500-25600" Default="25500-25600" Mode="tcp" Description="Container Port: 25500-25600 yes, 100 ports for 100 possible Servers" Type="Port" Display="always-hide" Required="true" Mask="false">25500-25600</Config>
 </Container>
