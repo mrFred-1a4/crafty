@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Crafty Control Freddy0</Name>
-  <Repository>freddy0/crafty-container</Repository>
+  <Repository>freddy0/crafty-container:3.2.2</Repository>
   <Registry>https://hub.docker.com/r/freddy0/crafty-container</Registry>
   <Network>bridge</Network>
   <MyIP/>
