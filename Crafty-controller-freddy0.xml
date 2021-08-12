@@ -30,8 +30,8 @@ Official Crafty Controller Page: https://craftycontrol.com/</Overview>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1623351680</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Help support Crafty on Patreon<DonateText/>
+  <DonateLink>https://www.patreon.com/craftycontroller<DonateLink/>
   <Description>An Appication to run all your minecraft servers From without a hustle.&#xD;
 This image is as official as it becomes, built from the Official docker template provided by Crafty Controller, but with some slight modifications for unraid. &#xD;
 &#xD;
