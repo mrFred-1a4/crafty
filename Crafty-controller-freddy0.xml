@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Crafty Control Freddy0</Name>
+  <Repository>freddy0/crafty-container:latest</Repository>
+  <Registry>https://hub.docker.com/r/freddy0/crafty-container</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/freddy0/crafty-container</Support>
+  <Project>https://gitlab.com/crafty-controller/crafty-web</Project>
+  <Overview>An Appication to run all your minecraft servers From without a hustle.&#xD;
+This image is as official as it becomes, built from the Official docker template provided by Crafty Controller, but with some slight modifications for unraid. &#xD;
+&#xD;
+Crafty controller is a lightweight minecraft wrapper with great featuers and a awesome gui, acessible from a modern web browser.&#xD;
+The username and password appears on the first launch in the docker logs!&#xD;
+&#xD;
+Important note: for minecraft servers on 1.17 and above please change the tag to freddy0/crafty-container:3.2.2 Java 8 , 11 and 16 are included, so it should work from now on. to specify the java version refer to my docker hub documentation: https://hub.docker.com/r/freddy0/crafty-container&#xD;
+&#xD;
+Template should work out of the box for everyone. Before adding a server, add a folder with your mineccraft jar file in your minecraft_servers folder. In the web ui please use only /minecraft_servers/yourservername, not the unraid path.&#xD;
+&#xD;
+for official support join the discord: https://discord.gg/9VJPhCE&#xD;
+&#xD;
+Official Crafty Controller Page: https://craftycontrol.com/</Overview>
+  <Category>GameServers: Other:</Category>
+  <WebUI>https://[IP]:[PORT:8000]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/mrFred-1a4/Freddy0-Crafty-Controller/main/Crafty-controller-freddy0.xml</TemplateURL>
+  <Icon>https://assets.gitlab-static.net/uploads/-/system/project/avatar/14984440/Crafty_Logo.png?</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1623351680</DateInstalled>
+  <DonateText>Help support Crafty on Patreon</DonateText>
+  <DonateLink>https://www.patreon.com/craftycontroller</DonateLink>
+  <Description>An Appication to run all your minecraft servers From without a hustle.&#xD;
+This image is as official as it becomes, built from the Official docker template provided by Crafty Controller, but with some slight modifications for unraid. &#xD;
+&#xD;
+Crafty controller is a lightweight minecraft wrapper with great featuers and a awesome gui, acessible from a modern web browser.&#xD;
+The username and password appears on the first launch in the docker logs!&#xD;
+&#xD;
+Important note: for minecraft servers on 1.17 and above please change the tag to freddy0/crafty-container:3.2-11-16 both Java 16 and 11 are included, so it should work from now on&#xD;
+&#xD;
+Template should work out of the box for everyone. Before adding a server, add a folder with your mineccraft jar file in your minecraft_servers folder. In the web ui please use only /minecraft_servers/yourservername, not the unraid path.&#xD;
+&#xD;
+for official support join the discord: https://discord.gg/9VJPhCE&#xD;
+&#xD;
+Official Crafty Controller Page: https://craftycontrol.com/</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>1800</HostPort>
+        <ContainerPort>8000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>25500-25600</HostPort>
+        <ContainerPort>25500-25600</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/freddy0-Crafty/crafty_db</HostDir>
+      <ContainerDir>/crafty_db</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/freddy0-Crafty/minecraft_servers</HostDir>
+      <ContainerDir>/minecraft_servers</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/freddy0-Crafty/crafty_web/backups</HostDir>
+      <ContainerDir>/crafty_web/backups</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Database" Target="/crafty_db" Default="/mnt/user/appdata/freddy0-Crafty-Control/crafty_db" Mode="rw" Description="Crafty Database for Wrapper Data" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/freddy0-Crafty/crafty_db</Config>
+  <Config Name="Server-Files" Target="/minecraft_servers" Default="/mnt/user/appdata/freddy0-Crafty-Control/minecraft_servers" Mode="rw" Description="Minecraft server Files&#13;&#10;Do not use this path in the web UI only use /minecraft_servers" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/freddy0-Crafty/minecraft_servers</Config>
+  <Config Name="Backups" Target="/crafty_web/backups" Default="/mnt/user/appdata/freddy0-Crafty-Control/crafty_web/backups" Mode="rw" Description="Backup Folder (all of your backups and Crafty Controller Stuff)" Type="Path" Display="always-hide" Required="true" Mask="false">/mnt/user/appdata/freddy0-Crafty/crafty_web/backups</Config>
+  <Config Name="Web UI Port" Target="8000" Default="1800" Mode="tcp" Description="Port to connect to the Web UI" Type="Port" Display="always" Required="true" Mask="false">1800</Config>
+  <Config Name="Minecraft Ports" Target="25500-25600" Default="25500-25600" Mode="tcp" Description="Container Port: 25500-25600 yes, 100 ports for 100 possible Servers" Type="Port" Display="always-hide" Required="true" Mask="false">25500-25600</Config>
+</Container>
