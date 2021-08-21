@@ -100,8 +100,6 @@ def do_intro():
     """.format(lines="/" * 75, version=version)
 
     print(intro)
-
-    print(intro)
     Freddy = "Brought to Unraid by"
     """
     ....__________  __________  ______  ______..
