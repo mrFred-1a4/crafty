@@ -3,6 +3,8 @@ FROM ubuntu:20.04
 ENV DEBIAN_FRONTEND="noninteractive"
 
 LABEL maintainer="Phillip Tarrant <https://gitlab.com/Ptarrant1>  Dockerfile created by kevdagoat <https://gitlab.com/kevdagoat> and brought to Unraid by Freddy0 <https://hub.docker.com/u/freddy0>"
+LABEL Name="Crafty-Controller"
+LABEL Version="3.3"
 
 COPY requirements.txt /crafty_web/requirements.txt
 RUN apt-get update && apt-get install -y \
@@ -13,7 +15,8 @@ RUN apt-get update && apt-get install -y \
     openjdk-11-jre \
     openjdk-16-jre \
     libmysqlclient-dev && \
-    pip3 install -r /crafty_web/requirements.txt
+    pip3 install -r /crafty_web/requirements.txt && \
+    apt-get clean
 
 COPY ./ /crafty_web
 WORKDIR /crafty_web
