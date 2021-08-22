@@ -2,9 +2,9 @@ FROM ubuntu:20.04
 
 ENV DEBIAN_FRONTEND="noninteractive"
 
-LABEL maintainer="Phillip Tarrant <https://gitlab.com/Ptarrant1>  Dockerfile created by kevdagoat <https://gitlab.com/kevdagoat> and brought to Unraid by Freddy0 <https://hub.docker.com/u/freddy0>"
-LABEL Name="Crafty-Controller"
-LABEL Version="3.3"
+LABEL maintainer="Phillip Tarrant <https://gitlab.com/Ptarrant1>  Dockerfile created by kevdagoat <https://gitlab.com/kevdagoat> and brought to Unraid by Freddy0 <https://hub.docker.com/u/freddy0>" \
+    Name="Crafty-Controller" \
+    Version="3.3"
 
 COPY requirements.txt /crafty_web/requirements.txt
 RUN apt-get update && apt-get install -y \
