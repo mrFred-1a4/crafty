@@ -20,6 +20,28 @@ Important note: for minecraft servers on 1.17 and above please change the tag to
 Template should work out of the box for everyone. Before adding a server, add a folder with your mineccraft jar file in your minecraft_servers folder. In the web ui please use only /minecraft_servers/yourservername, not the unraid path.&#xD;
 &#xD;
 for official support join the discord: https://discord.gg/9VJPhCE&#xD;
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Crafty</Name>
+  <Repository>freddy0/crafty-container:latest</Repository>
+  <Registry>https://hub.docker.com/r/freddy0/crafty-container</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/freddy0/crafty-container</Support>
+  <Project>https://gitlab.com/crafty-controller/crafty-web</Project>
+  <Overview>An Appication to run all your minecraft servers From without a hustle.&#xD;
+This image is as official as it becomes, built from the Official docker template provided by Crafty Controller, but with some slight modifications for unraid. &#xD;
+&#xD;
+Crafty controller is a lightweight minecraft wrapper with great featuers and a awesome gui, acessible from a modern web browser.&#xD;
+The username and password appears on the first launch in the docker logs!&#xD;
+&#xD;
+Includes Java 8, 11, 16, 17.To specify the java version refer to my docker hub documentation: https://hub.docker.com/r/freddy0/crafty-container&#xD;
+&#xD;
+Template should work out of the box for everyone. Before adding a server, add a folder with your mineccraft jar file in your minecraft_servers folder. In the web ui please use only /minecraft_servers/yourservername, not the unraid path.&#xD;
+&#xD;
+for official support join the discord: https://discord.gg/9VJPhCE&#xD;
 &#xD;
 Official Crafty Controller Page: https://craftycontrol.com/</Overview>
   <Category>GameServers: Other:</Category>
